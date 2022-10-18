@@ -3,6 +3,7 @@ import { BuscarCodBrandon } from '../pages/Client/ModSEPOMEX/BuscarCodBrandon';
 import { BuscarCodVero} from '../pages/Client/ModSEPOMEX/BuscarCodVero';
 import { BuscarCodDavid} from '../pages/Client/ModSEPOMEX/BuscarCodDavid';
 import { BuscarCP} from '../pages/Client/ModSEPOMEX/BuscarCP';
+import { PostPaises } from '../pages/Client/ModSEPOMEX/PostPaises';
 
 const routesClient = [
     {
@@ -27,6 +28,12 @@ const routesClient = [
         path:"/cp",
         layout:ClientLayaout,
         component:BuscarCP,
+        exact:true,
+    },
+    {
+        path:"/post1",
+        layout:ClientLayaout,
+        component:PostPaises,
         exact:true,
     },
 ];
